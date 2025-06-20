@@ -3,10 +3,13 @@ class Solution:
         count=0
 
         while(n>0):    
-            if(n%10<0):
+            if(n//10==0):
+
+                count=count+1
                 break
             else:
                 count=count+1
                 n=n//10
         return count
-print(Solution().countDigit(340))
+print(Solution().countDigit(30000))
+
